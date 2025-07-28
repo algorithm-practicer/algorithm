@@ -1,29 +1,10 @@
 <h1 align="center">Algorithm</h1>
 
-<br>
-<p align="center">코테 뚫기 스터디 모임</p>
-<br>
-
 ## Period
 
 ### 2025.01 ~ Present
 
-<br>
-
-## Team
-
-- [이기웅](https://github.com/rldnd): Python, Javascript
-- [박용준](https://github.com/kyoongdev): Python
-- [김소희](https://github.com/ssoheeh): Python, Java
-
-<br>
-
 ## 규칙
-
-### 공통
-
-- 회의는 매주 화요일 오후 7시로 한다.
-  - 회의 이전, 팀원간의 논의를 통해 공유할 내용이 없을 경우, 회의는 유동적으로 취소할 수 있다.
 
 ### 문제 풀이
 
@@ -43,39 +24,25 @@
 
 #### 자료구조
 
-| 자료구조                       | 주차 | 작성자 |
-| ------------------------------ | ---: | ------ |
-| [배열](./cheatsheets/array.md) |    1 | 박용준 |
-| [해시](./cheatsheets/hash.md)  |    1 | 박용준 |
-| 트리                           |    2 | 박용준 |
-| 그래프                         |    2 | 박용준 |
-| 덱                             |    3 | 박용준 |
-| 큐                             |    3 | 박용준 |
-| 스택                           |    3 | 박용준 |
-| 재귀                           |    4 | 박용준 |
+- [배열](./cheatsheets/array.md)
+- [해시](./cheatsheets/hash.md)
+- [스택/큐/덱](./cheatsheets/stack-queue-deque.md)
+- [그래프/트리](./cheatsheets/graph_tree.md)
 
 #### 알고리즘 [빈도수 상]
 
-| 알고리즘                                  | 주차 | 작성자 |
-| ----------------------------------------- | ---: | ------ |
-| [DFS, BFS](./cheatsheets/dfs-bfs.md)      |    1 | 이기웅 |
-| [DP](./cheatsheets/dp.md)                 |    2 | 이기웅 |
-| [백트래킹](./cheatsheets/backtracking.md) |    3 | 이기웅 |
-| [문자열](./cheatsheets/string.md)         |    3 | 김소희 |
+- [DFS, BFS](./cheatsheets/dfs-bfs.md)
+- [DP](./cheatsheets/dp.md)
+- [백트래킹](./cheatsheets/backtracking.md)
 
 #### 알고리즘 [빈도수 중]
 
-| 알고리즘                                    | 주차 | 작성자 |
-| ------------------------------------------- | ---: | ------ |
-| [이분 탐색](./cheatsheets/binary-search.md) |    4 | 이기웅 |
-| [다익스트라](./cheatsheets/dijkstra.md)     |    4 | 김소희 |
-| [투 포인터](./cheatsheets/two-pointer.md)   |    5 | 이기웅 |
+- [이분 탐색](./cheatsheets/binary-search.md)
+- [다익스트라](./cheatsheets/dijkstra.md)
+- [투 포인터](./cheatsheets/two-pointer.md)
+- [Union-Find](./cheatsheets/union-find.md)
+- [MST](./cheatsheets/mst.md)
 
 #### 알고리즘 [빈도수 하]
 
-| 알고리즘                                | 주차 | 작성자 |
-| --------------------------------------- | ---: | ------ |
-| [플로이드 워샬](./cheatsheets/floyd.md) |    5 | 이기웅 |
-| 위상정렬                                |    6 | 이기웅 |
-| 비트마스킹                              |    6 | 김소희 |
-| 그리디                                  |    7 | 이기웅 |
+- [플로이드 워샬](./cheatsheets/floyd.md)
