@@ -33,7 +33,7 @@ def union(x, y):
     if x == y:
         return
 
-    if p[x] < p[y]:
+    if p[x] > p[y]:
         x, y = y, x
 
     if p[x] == p[y]:
