@@ -22,7 +22,6 @@
 
 ### TODO
 
-- [ ] 그리디
 - [ ] 수학
 - [ ] 위상 정렬
 - [ ] KMP
@@ -55,20 +54,21 @@
 - [스택/큐/덱](./cheatsheets/stack-queue-deque.md)
 - [그래프/트리](./cheatsheets/graph_tree.md)
 
-#### 알고리즘 [빈도수 상]
+#### 알고리즘 [빈도수 최상 - 필수]
 
 - [DFS, BFS](./cheatsheets/dfs-bfs.md)
 - [DP](./cheatsheets/dp.md)
-- [백트래킹](./cheatsheets/backtracking.md)
-
-#### 알고리즘 [빈도수 중]
-
+- [그리디](./cheatsheets/greedy.md)
 - [이분 탐색](./cheatsheets/binary-search.md)
-- [다익스트라](./cheatsheets/dijkstra.md)
 - [투 포인터](./cheatsheets/two-pointer.md)
+
+#### 알고리즘 [빈도수 상 - 중요]
+
+- [백트래킹](./cheatsheets/backtracking.md)
+- [다익스트라](./cheatsheets/dijkstra.md)
 - [Union-Find](./cheatsheets/union-find.md)
+
+#### 알고리즘 [빈도수 중 - 선택]
+
 - [MST](./cheatsheets/mst.md)
-
-#### 알고리즘 [빈도수 하]
-
 - [플로이드 워샬](./cheatsheets/floyd.md)
