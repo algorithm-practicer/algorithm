@@ -22,7 +22,6 @@
 
 ### TODO
 
-- [ ] 수학
 - [ ] 위상 정렬
 - [ ] KMP
 - [ ] 트라이
@@ -61,6 +60,7 @@
 - [그리디](./cheatsheets/greedy.md)
 - [이분 탐색](./cheatsheets/binary-search.md)
 - [투 포인터](./cheatsheets/two-pointer.md)
+- [수학](./cheatsheets/math.md)
 
 #### 알고리즘 [빈도수 상 - 중요]
 
