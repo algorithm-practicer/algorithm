@@ -22,7 +22,6 @@
 
 ### TODO
 
-- [ ] 위상 정렬
 - [ ] KMP
 - [ ] 트라이
 - [ ] 비트마스킹
@@ -67,6 +66,7 @@
 - [백트래킹](./cheatsheets/backtracking.md)
 - [다익스트라](./cheatsheets/dijkstra.md)
 - [Union-Find](./cheatsheets/union-find.md)
+- [위상 정렬](./cheatsheets/topological-sort.md)
 
 #### 알고리즘 [빈도수 중 - 선택]
 
