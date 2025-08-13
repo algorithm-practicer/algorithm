@@ -37,7 +37,6 @@
 - [ ] 해시
 - [ ] 재귀
 - [ ] 시뮬레이션
-- [ ] 정렬 1
 - [ ] 정렬 2
 - [ ] 이진 검색 트리
 - [ ] 우선순위 큐
@@ -58,6 +57,7 @@
 - [그리디](./cheatsheets/greedy.md)
 - [이분 탐색](./cheatsheets/binary-search.md)
 - [투 포인터](./cheatsheets/two-pointer.md)
+- [정렬](./cheatsheets/sort.md)
 - [수학](./cheatsheets/math.md)
 
 #### 알고리즘 [빈도수 상 - 중요]
