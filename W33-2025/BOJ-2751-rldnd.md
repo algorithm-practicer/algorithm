@@ -6,7 +6,7 @@
 
 - Merge Sort 연습하기
 
-## <br>정답 코드
+## <br>정답 코드 - Merge Sort
 
 ```python
 import sys
@@ -52,6 +52,45 @@ def merge_sort(arr):
 
 merge_sort(arr)
 
+for i in arr:
+    print(i)
+
+```
+
+## <br>정답 코드 - Quick Sort
+
+```python
+import sys
+readline = sys.stdin.readline
+N = int(readline())
+arr = [int(readline()) for _ in range(N)]
+
+def heap_sort(arr):
+    def sort(low, high):
+        if high <= low:
+            return
+        mid = partition(low, high)
+        sort(low, mid - 1)
+        sort(mid, high)
+
+    def partition(low, high):
+        pivot = arr[(low + high) // 2]
+
+        while low <= high:
+            while arr[low] < pivot:
+                low += 1
+            while arr[high] > pivot:
+                high -= 1
+            if low <= high:
+                arr[low], arr[high] = arr[high], arr[low]
+                low += 1
+                high -= 1
+
+        return low
+
+    return sort(0, len(arr) - 1)
+
+heap_sort(arr)
 for i in arr:
     print(i)
 

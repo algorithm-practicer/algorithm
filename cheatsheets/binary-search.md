@@ -30,21 +30,21 @@ def bisect_left(target, array):
 ## bisect_right
 
 ```python
-def bisect_right(target, array): # right 기준탐색
-  left, right = 0, len(array)-1
-  while left <= right:
+def bisect_right(target, array):
+  left, right = 0, len(array)
+  while left < right:
       mid = (left + right) // 2
-      if array[mid] > target:
-          right = mid - 1
-      else:
+      if array[mid] <= target:
           left = mid + 1
-  return right
+      else:
+          right = mid
+  return left
 ```
 
 - 값이 리스트에 있을 때
-  - right: 타겟 값이 마지막으로 등장하는 인덱스 ( 제일 오른 쪽 )
+  - 타겟 값이 마지막으로 등장하는 인덱스 + 1을 반환 (삽입 위치)
 - 값이 리스트에 없을 때
-  - 리스트에 오름차순에 들어갈 index - 1 반환 ~~원래 여기에 있어야 하는데?~~
+  - 타겟이 삽입될 위치를 반환 (target보다 큰 첫 번째 원소의 인덱스)
 
 ## 정확히 찾아보기
 

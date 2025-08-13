@@ -9,10 +9,14 @@
 
 - 길이가 N, M인 두 정렬된 리스트를 합쳐서 길이 N+M의 정렬된 리스트를 만드는 방법을 알아야 한다.
   - 두 리스트의 가장 작은 값끼리 비교해서 새로운 배열에 집어넣기 반복
+- Merge Sort는 Stable Sort이다!
+  - 같은 값의 원소가 있을 때, 정렬 후에도 원래의 상대적인 위치가 유지된다.
 
 > [!NOTE]
 >
-> 시간복잡도: O(N log N)
+> 시간복잡도: O(NlogN)
+> 추가적으로 필요한 공간 (Overhead): O(N)
+> Stable Sort: O
 
 ### 구현 방식
 
@@ -81,4 +85,59 @@ def merge_sort(arr):
             arr[i] = temp[i - low]
 
     return sort(0, len(arr))
+```
+
+## Quick Sort
+
+- 배열 중 pivot을 설정하고, 피벗보다 작은 값과 큰 값을 분리하여 정렬하는 방법
+
+> [!NOTE]
+>
+> 시간복잡도: Amortized O(NlogN) 단 평균적으로 Merge Sort보다 빠름
+> 추가적으로 필요한 공간 (Overhead): O(1)
+> Stable Sort: X
+
+### 코드
+
+```py
+def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    lesser_arr, equal_arr, greater_arr = [], [], []
+    for num in arr:
+        if num < pivot:
+            lesser_arr.append(num)
+        elif num > pivot:
+            greater_arr.append(num)
+        else:
+            equal_arr.append(num)
+    return quick_sort(lesser_arr) + equal_arr + quick_sort(greater_arr)
+```
+
+### 최적화 코드
+
+```py
+def quick_sort(arr):
+    def sort(low, high):
+        if high <= low:
+            return
+
+        mid = partition(low, high)
+        sort(low, mid - 1)
+        sort(mid, high)
+
+    def partition(low, high):
+        pivot = arr[(low + high) // 2]
+        while low <= high:
+            while arr[low] < pivot:
+                low += 1
+            while arr[high] > pivot:
+                high -= 1
+            if low <= high:
+                arr[low], arr[high] = arr[high], arr[low]
+                low, high = low + 1, high - 1
+        return low
+
+    return sort(0, len(arr) - 1)
 ```
