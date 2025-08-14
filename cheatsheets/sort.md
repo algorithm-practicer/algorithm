@@ -15,7 +15,9 @@
 > [!NOTE]
 >
 > 시간복잡도: O(NlogN)
+>
 > 추가적으로 필요한 공간 (Overhead): O(N)
+>
 > Stable Sort: O
 
 ### 구현 방식
@@ -94,7 +96,9 @@ def merge_sort(arr):
 > [!NOTE]
 >
 > 시간복잡도: Amortized O(NlogN) 단 평균적으로 Merge Sort보다 빠름
+>
 > 추가적으로 필요한 공간 (Overhead): O(1)
+>
 > Stable Sort: X
 
 ### 코드
@@ -141,3 +145,29 @@ def quick_sort(arr):
 
     return sort(0, len(arr) - 1)
 ```
+
+## Counting Sort
+
+### 구현 방법
+
+- 미리 테이블을 만들어놓고, 각 수의 등장 횟수만 세면 됨.
+
+> [!NOTE]
+>
+> 시간복잡도: O(N + K)
+>
+> K는 입력값의 범위
+
+## Radix Sort
+
+### 구현 방법
+
+- 각 자릿수에 대해 첫째자리 수부터 차례대로 Counting Sort와 같이 배열에 값을 집어넣는다.
+- 다음 자릿수에 대해 같은 방식으로 진행한다.
+- 가장 큰 수의 자릿수만큼 반복한다.
+
+> [!NOTE]
+>
+> 시간복잡도: O(DN)
+>
+> D는 자릿수의 최대 개수
