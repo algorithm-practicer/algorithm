@@ -1,4 +1,4 @@
-# [[LeetCode] Two Sum](https://leetcode.com/problems/two-sum)
+# [[LeetCode] 1. Two Sum](https://leetcode.com/problems/two-sum)
 
 > [브루트포스]
 
