@@ -1,4 +1,4 @@
-# [[LeetCode] 1. Two Sum](https://leetcode.com/problems/two-sum)
+# [[LeetCode] 21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
 
 > [Merge]
 
