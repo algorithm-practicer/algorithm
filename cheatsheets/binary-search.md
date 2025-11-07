@@ -12,13 +12,13 @@
 
 ```python
 def bisect_left(target, array):
-  left, right = 0, len(array)-1
-  while left <= right:
+  left, right = 0, len(array)
+  while left < right:
       mid = (left + right) // 2
       if array[mid] < target:
           left = mid + 1
       else:
-          right = mid - 1
+          right = mid
   return left
 ```
 
@@ -45,18 +45,3 @@ def bisect_right(target, array):
   - 타겟 값이 마지막으로 등장하는 인덱스 + 1을 반환 (삽입 위치)
 - 값이 리스트에 없을 때
   - 타겟이 삽입될 위치를 반환 (target보다 큰 첫 번째 원소의 인덱스)
-
-## 정확히 찾아보기
-
--> bisect_left의 if문과 bisect_right의 if문을 같이 사용하면 됨.
-
-```python
-while left <= right:
-  mid = (left + right) // 2
-  if array[mid] < target:
-    left = mid + 1
-  elif array[mid] > target:
-    right = mid - 1
-  else:
-    # 정답!
-```
